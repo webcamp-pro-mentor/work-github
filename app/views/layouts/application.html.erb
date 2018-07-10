@@ -10,7 +10,10 @@
   </head>
 
   <body>
-  <%= link_to "トップ", root_path %>
+    <header>
+      <li><%= link_to "ログイン", new_user_session_path %></li>
+      <li><%= link_to "トップ", root_path %><li>
+    </header>
     <%= yield %>
   </body>
 </html>
